@@ -93,10 +93,14 @@
   text-align: center;
 }
 
-.horizontalLine {
-  border-top: 0.1px solid gray;
-  width: 300px;
-  margin: 30px auto;
+/* MyComponent.css */
+
+.horizon {
+  border-bottom: 1px solid gray; /* Adjust color and thickness as needed */
+  margin: 10px 0; /* Adjust margin as needed */
+  margin-left: 39%;
+  margin-right: 39%;
+  padding-top: 2%;
 }
 
 .container101 {
@@ -106,15 +110,36 @@
 .about1,
 .about2 {
   flex: 1;
-  padding: 1rem;
+  padding: 0.10rem;
   text-align: center;
   padding-bottom: 150px;
+  padding-top: 1%;
+  margin: 0; /* Remove default margin */
+  font-size: 16px;color: #000000;
+  font-family: "daxline pro regular", Sans-serif;
+  font-size: 16px
+
+}
+
+.image-container {
+  display: flex;
+  gap: 2px; /* Adjusted gap to a small value */
 }
 
 .image-about {
-  width: 50%;
+  width: 30%;
   margin-bottom: 1rem;
   padding-bottom: 15px;
+  height: auto;
+  margin-right: -5px; /* Adjusted margin-right to a negative value */
+}
+
+
+
+.text-con9 {
+  text-align: center;
+  padding-top: 1%;
+
 }
 
 .headline {
@@ -170,7 +195,7 @@
 }
 
 .leader {
-  width: 16%;
+  width: 15%;
   text-align: center;
   padding: 1rem;
   margin-bottom: 1rem;

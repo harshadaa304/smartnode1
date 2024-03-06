@@ -1,8 +1,29 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import './about.css';
 
 export default function About() {
-    
+  
+  const [homesAutomated, setHomesAutomated] = useState(0);
+  const [channelPartners, setChannelPartners] = useState(0);
+  const [appUsers, setAppUsers] = useState(0);
+  const [statesCovered, setStatesCovered] = useState(0);
+
+  useEffect(() => {
+    // Function to increment the values gradually
+    const incrementValues = () => {
+      setHomesAutomated((prevCount) => Math.min(prevCount + 50, 5000));
+      setChannelPartners((prevCount) => Math.min(prevCount + 50, 250));
+      setAppUsers((prevCount) => Math.min(prevCount + 50, 5000));
+      setStatesCovered((prevCount) => Math.min(prevCount + 50, 5000));
+    };
+
+    // Increment values every second
+    const intervalId = setInterval(incrementValues, 30);
+
+    // Cleanup the interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, []);
     
   return (
    <div className="aboutus-page">
@@ -26,7 +47,11 @@ export default function About() {
       <div className="headline">
       <h2 >Our Vision & Mission</h2>
       </div>
+      <div className='horizon'></div>
       <div className="container101">
+        
+          
+      
       
       <div className="about1">
         <img
@@ -34,8 +59,10 @@ export default function About() {
           
           className="image-about"
         />
-        <h3>Vision</h3>
-        <p>The purpose is to make the life of people Smarter & Better.</p>
+        <div className='text-con9'>
+        <h3><strong>Vision</strong></h3>
+        <p>The purpose is to make the life of people<br></br> Smarter & Better.</p>
+        </div>
       </div>
       <div className="about2">
         <img
@@ -43,20 +70,22 @@ export default function About() {
           
           className="image-about"
         />
-        <h3>Mission</h3>
-        <p>The mission is to be the leading player in the IoT-based Electrical industry.</p>
+        <h3><strong>Mission</strong></h3>
+        <p>The mission is to be the leading player in the <br></br>IoT-based Electrical industry.</p>
       </div>
     </div>
 
     <div className="headline" mx-6>
       <h2 >Our Core Value</h2>
       </div>
+      <div className='horizon'></div>
+
 
       <div className="container101">
       
       <div className="about1">
         <img
-          src={process.env.PUBLIC_URL + '/Core1.png'}
+          src={process.env.PUBLIC_URL + '/Integrity.webp'}
           
           className="image-about"
         />
@@ -64,15 +93,15 @@ export default function About() {
       </div>
       <div className="about2">
         <img
-          src={process.env.PUBLIC_URL + '/Core2.png'}
+          src={process.env.PUBLIC_URL + '/Innovation.webp'}
           
           className="image-about"
         />
         <h3>Innovation</h3>
       </div>
-      <div className="about2">
+     <div className="about2">
         <img
-          src={process.env.PUBLIC_URL + '/Core3.png'}
+          src={process.env.PUBLIC_URL + '/Collaboration.webp'}
           
           className="image-about"
         />
@@ -80,7 +109,7 @@ export default function About() {
       </div>
       <div className="about2">
         <img
-          src={process.env.PUBLIC_URL + '/Core4.png'}
+          src={process.env.PUBLIC_URL + '/Empowerment.webp'}
           
           className="image-about"
         />
@@ -88,7 +117,7 @@ export default function About() {
       </div>
       <div className="about2">
         <img
-          src={process.env.PUBLIC_URL + '/Core5.png'}
+          src={process.env.PUBLIC_URL + '/Patriotism.webp'}
           
           className="image-about"
         />
@@ -100,34 +129,27 @@ export default function About() {
 
 
     <div className="headline">
-      <h2 >Our Footprints</h2>
+        <h2>Our Footprints</h2>
       </div>
+      <div className='horizon'></div>
       <div className="container101">
-      
-      <div className="about1">
-        
-        <h1><strong>5,000 +</strong></h1>
-        <p>Homes Automated</p>
+        <div className="about1">
+          <h1><strong>{homesAutomated.toLocaleString()}</strong></h1>
+          <p>Homes Automated</p>
+        </div>
+        <div className="about2">
+          <h1><strong>{channelPartners.toLocaleString()}</strong></h1>
+          <p>Channel Partners</p>
+        </div>
+        <div className="about1">
+          <h1><strong>{appUsers.toLocaleString()}</strong></h1>
+          <p>App users</p>
+        </div>
+        <div className="about2">
+          <h1><strong>{statesCovered.toLocaleString()}</strong></h1>
+          <p>States Covered</p>
+        </div>
       </div>
-      <div className="about2">
-        
-      <h1><strong>250 +</strong></h1>
-        <p>Channel Partners</p>
-      </div>
-
-      <div className="about1">
-        
-        <h1><strong>15,000 +</strong></h1>
-        <p>App users</p>
-      </div>
-      <div className="about2">
-        
-      <h1><strong>20 +</strong></h1>
-        <p>States Covered </p>
-      </div>
-    </div>
-
-
 
 
 
