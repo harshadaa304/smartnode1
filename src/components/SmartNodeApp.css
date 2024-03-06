@@ -1,0 +1,39 @@
+/* SmartNodeApp.css */
+
+.background-container {
+    /* Add any styles you want for the overall container */
+  }
+  
+  .elementor-section {
+    position: relative;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Add your gradient colors */
+    overflow: hidden;
+    margin: 20px 0; /* Add margin as needed */
+    border-radius: 10px; /* Add border-radius as needed */
+  }
+  
+  .elementor-shape-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .elementor-container {
+    display: flex;
+  }
+  
+  .elementor-column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .elementor-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Add any border-radius you want */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  /* Add your additional styles for headings, paragraphs, and icons here */
+  

@@ -1,0 +1,171 @@
+.image-container1 {
+    margin-top: 2%;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    overflow: hidden; /* Hide overflow to crop the image */
+   
+}
+  
+  .image1 {
+    margin-top: 2%;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); 
+    filter: brightness(70%); 
+  }
+  
+  .image-text {
+    position: absolute; /* Use absolute positioning */
+    top: 30%;
+    left: 50%; /* Position text horizontally in the middle */
+    transform: translate(-50%, -50%); /* Center text */
+    color:white; /* Text color */
+    font-size: 30px; /* Adjust font size */
+    font-weight: bold; /* Bold font */
+    text-align: center; /* Center text horizontally */
+  
+  }
+.form-container {
+   width: 100%;
+   height: 150%;
+   margin-top: 20%;
+    margin-left: 30%;
+    border: 2px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+  }
+  
+  /* Style for form labels */
+  .form-label {
+    font-weight: bold;
+  }
+  
+  /* Style for form inputs */
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #080808 !important;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Style for select input */
+  .form-select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #050505 !important;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Style for checkbox container */
+  .form-check {
+    margin-top: 15px;
+    
+  }
+  
+  /* Style for submit button */
+  .btn.btn-primary {
+   background-color: #07a89b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+   height: 116%;
+   width: 40%;
+    cursor: pointer;
+  }
+  
+  /* Style for submit button on hover */
+  .btn.btn-primary:hover {
+    background-color: #46c7bc;
+  }
+
+.main-container {
+   width: 660px;
+    height: 660px;
+    margin-bottom: 20%;  
+  }
+  
+  /* Style for the form */
+  .form {
+    width: 100%; /* Take up full width */
+   padding-left: 10%;
+   padding-top: 5%;
+  }
+
+.form-check {
+    margin-top: 15px;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+  }
+  
+  /* Style for checkbox input */
+  .form-check-input {
+    margin-right: 10px; /* Add some space between checkbox and label */
+  }
+  
+ 
+  .line {
+    position: absolute; /* Position the line absolutely */
+    bottom: 50px; /* Adjust vertical position */
+    left: 80%; /* Center horizontally */
+    width: 200px; /* Adjust width */
+    height: 2px; /* Adjust height */
+    background: #07a89b; /* Adjust color */
+    border-radius: 70px; /* Adjust the border radius for a curved appearance */
+    transform: translatey(-50%); /* Center horizontally */
+    animation: curve 4s infinite alternate; /* Apply animation */
+    opacity: 1; /* Initially visible */
+}
+
+@keyframes curve {
+    0% {
+        border-radius: 0%;
+        opacity: 1; /* Initially visible */
+    }
+    50% {
+        border-radius: 70%; /* Adjust the border radius for a curved appearance */
+        opacity: 1; /* Visible */
+    }
+    100% {
+        border-radius: 80%;
+        opacity: 0; /* Invisible */
+    }
+}
+
+.tab-container {
+  
+  margin-bottom: 20px; /* Add margin to separate from the form */
+  padding-bottom: 10px; /* Add padding for spacing */
+}
+
+.nav-tabs .nav-link {
+  border: none; /* Remove border from the tab links */
+  border-radius: 0; /* Remove border radius */
+  background-color: transparent; /* Set background color as transparent */
+  color: #000;
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom: 2px solid #07a89b; /* Add bottom border to active tab */
+  color: #07a89b; /* Change text color of active tab */
+}
+.right-side-container {
+  position: absolute;
+  top: 70%;
+  right: 10%;
+  padding: 20px;
+}
+.address-label {
+  font-weight: bold;
+  color:#07a89b; /* Red color for the label */
+}
+
+.address-text {
+  color: #333; /* Default color for the address text */
+  font-size: 16px;
+}

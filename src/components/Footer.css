@@ -1,0 +1,56 @@
+/* Footer.css */
+
+.footer-container {
+    height: 100px;
+    width: 100%; /* Set your desired width */
+    /* Add other styles as needed */
+    padding-top: 200px;
+  }
+
+  /* Footer container */
+  .footer {
+    background-color: #454545;
+    color: white;
+    font-size: 14px;
+    padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    
+    
+  }
+  
+  /* Links */
+  .text-reset {
+    color: #a2a2a2; /* Set the color for links */
+    text-decoration: none;
+  }
+  
+  .text-reset:hover {
+    color: white;
+  }
+  
+  /* Product section */
+  .text-uppercase {
+    color: white; 
+  }
+  
+  .logo-small {
+    width: 130px;
+    height: auto;
+    margin-left:5px;
+    
+  }
+  
+  
+  
+  /* Copyright section */
+  .text-center p {
+    margin: 0;
+    font-size: 16px;
+    text-align: left;
+    color: #a2a2a2;
+  }
+  .text-no-underline {
+    text-decoration: none;
+  }

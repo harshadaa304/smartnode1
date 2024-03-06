@@ -1,0 +1,68 @@
+.home-page {
+    display: flex;
+    background-color: #E5E5E1;
+    height: 100vh; /* Ensure the home page takes up the full viewport height */
+      padding-left: 60px;
+      
+      
+      
+  }
+  .text-container h1 {
+    font-size: 50px;
+  }
+  .text-container {
+    flex: 1;
+    padding-left: 60px;
+    text-align: justify;
+    overflow-y: auto; /* or overflow-y: scroll; */
+    padding-right: 20px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content:center; /* Center content vertically */
+    
+  }
+  
+  .image-container {
+    padding: 20px;
+    background-color: #E5E5E1;
+   margin-top: 100px;
+  } 
+  
+  .image {
+    width: 570px; 
+    height: 537px;
+    padding-right: 50px;
+    margin-top: 20px; 
+    border: #E5E5E1;
+  } 
+  
+  /* body {
+    background-color: #E5E5E1;
+    padding-top: 30px;
+    margin: 0%;
+    
+  } */
+  
+  /* .navbar {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    background-color: #ffffff; 
+    z-index: 1000; 
+    
+  } */
+  .button.button {
+    border: 1px solid #07a89b;
+    background-color: #07a89b;
+    height: 50px;
+    width: 250px;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-size: 16px; /* Adjust font size */
+    letter-spacing: 0.2px;
+    size: 10px;
+   
+  }
+  

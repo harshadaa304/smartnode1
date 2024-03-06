@@ -1,0 +1,33 @@
+.navbar-button-container {
+    width: 90%; /* Maximum width */
+    /* margin-top: 30% ; Center the container horizontally with some top margin */
+  padding-left: 10%;
+
+}
+  .btn.btn-primary2{
+    background-color: #07a89b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+   height: 116%;
+   width: 20%;
+    cursor: pointer;
+  }
+  .btn.btn-primary2:hover{
+    color: #07a89b;
+  }
+  .navbar-button-container .form-control {
+    
+    border: 1px solid #000 !important; /* Black border */
+  }
+  .navbar-button-container .form-select{
+    border: 1px solid #000 !important;
+  }
+  .text1-container1{
+         margin-top: 10%;
+         padding-top: 20px;
+         padding-left: 30%;
+         font-size: 35px;
+         text-underline-position: below;
+         color: #403e3e;
+  }

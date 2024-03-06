@@ -1,0 +1,66 @@
+/* Your existing styles */
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  top: 0;
+  padding-left: 60px;
+  position: fixed;
+  width: 100%; /* Adjust width for mobile screens */
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 100%; /* Adjust width for mobile screens */
+  max-width: 240px; /* Set max-width to maintain responsiveness */
+  height: auto; /* Allow the height to adjust accordingly */
+  margin-bottom: 10px; /* Adjust margin for spacing */
+  margin-top: 10px; /* Adjust margin for spacing */
+}
+
+.navbar-container .nav-link {
+  margin: 0;
+  margin-top: 10px; /* Adjust margin for spacing */
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-container .nav-link:hover {
+  color: #07a89b;
+}
+
+.rectangle-button {
+  border: 1px solid #07a89b;
+  background-color: #07a89b;
+  padding: 3px 15px; /* Adjust padding for mobile screens */
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 10px; /* Adjust margin for spacing */
+  margin-top: 10px; /* Adjust margin for spacing */
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding-left: 15px; /* Adjust padding for mobile screens */
+  }
+
+  .nav-link {
+    margin: 0 10px; /* Adjust margin for spacing on mobile screens */
+  }
+
+  .rectangle-button {
+    padding: 3px 10px; /* Adjust padding for mobile screens */
+  }
+}

@@ -1,0 +1,126 @@
+.container { 
+    z-index: 1;
+}
+  
+.content {
+    position: absolute;
+    top: 50%;
+    left: 20px; /* Adjust as needed */
+    transform: translateY(-50%);
+    z-index: 2;
+    margin-top: 10%;
+    padding-left: 8%;
+    color: #54595F;
+    font-size: 20px;  
+}
+  
+.carousel-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    border-radius: 20px;
+    overflow: hidden; /* Ensure content within the carousel doesn't overflow */
+    margin-top: 10%;   
+}
+  
+.carousel {
+    width: 500px;
+    height: 400px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    justify-content: center;
+    
+}
+  
+.carousel-item {
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    
+}
+  
+.carousel-control-prev {
+    color: white;
+}
+  
+.image {
+    transition: transform 5s ease;
+    
+}
+  
+.button1 {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding to change the size of the button */
+    background-color: #07a89b; /* Green background */
+    color: white; /* White text */
+    text-align: center; /* Center text horizontally */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    animation: slideUp 0.8s ease forwards;
+    color: white;
+    opacity: 0;
+    margin-top: 10%;
+    margin-bottom: 40%;
+    font-size: 30px;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+ .additional-text-box {
+  margin-top: 2%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid white; 
+  height: 70%;
+  width: 40%;
+   top: 80%;
+  
+}
+
+.additional-text {
+  color: white;
+  font-size: 20px;
+
+   
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: 50%;
+  /* transform: translateX(-50%); */
+  z-index: 15;
+
+}
+
+.carousel-indicators button {
+  background-color:#54595F ;
+  border: none;
+  width: 6px; /* Adjust size of dots */
+  height: 6px; /* Adjust size of dots */
+  border-radius: 20%; /* Make the dots circular */
+  margin: 0 5px; /* Adjust spacing between dots */
+  padding: 0; /* Remove padding to ensure perfect circles */
+}
+
+.carousel-indicators .active {
+  background-color: #1c1d1e; /* Active dot color */
+}
+

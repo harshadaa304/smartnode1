@@ -1,0 +1,74 @@
+.product-page {
+    display: flex;
+    background-color: #DEF9FF;
+padding-left: 40px;
+height: 100%;
+    
+  }
+  .product-container {
+    flex: 1;
+    padding-left: 50px;
+    text-align: justify;
+    overflow-y: auto; 
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column; 
+    padding-top: 25%;
+   
+    /* justify-content:center;  */
+    
+  /* margin-top: 35%; */
+    
+  }
+  .image4-container4 {
+   
+    background-color: #E5E5E1;
+  
+  } 
+  
+  .image4 {
+    margin-top: 35%;
+    width: 500px; 
+    height: 500px;
+
+ margin-right: 100px;
+    border: #E5E5E1;
+  } 
+  .form4-control{
+    border: 1px solid black !important;
+    height: 35px;
+    padding-left: 20px;
+    width: 100%;
+  
+   
+}
+.btn.btn-primary4 {
+  background-color: #07a89b;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+  height: 35px;
+  width: 100%;
+  
+ }
+ .btn.btn-primary4:hover {
+  color: #fff;
+ background-color: #07a89b
+ }
+ .form-form4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-form4 .col-2 {
+  flex: 1;
+  margin-right: 10px; /* Add margin-right for spacing between input boxes */
+}
+
+.form-form4 .col-2 input {
+  width: calc(100% - 20px); /* Adjust input width to accommodate the margin */
+}
+
+.form-form4 .col-2:last-child {
+  margin-right: 0; /* Remove margin from the last input box */
+}
